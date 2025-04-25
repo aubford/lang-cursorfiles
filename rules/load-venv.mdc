@@ -1,0 +1,9 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Before running any command line commands, don't forget to load the appropriate python virtual environment. Load the correct venv based on the location of the file that is being worked on.
+
+For the `langchain-pepwave` project that is in the directory `langchain-pepwave/langchain_pepwave_env`.
+For the `ragas` project, that is in the directory `ragas/venv`.

@@ -1,0 +1,9 @@
+---
+description: Use this if Langchain is mentioned or the required changes involve LangChain components.
+globs: 
+alwaysApply: false
+---
+This question is related to LangChain. You need to search the python files in these project directories for pertinent information in order to accurately answer the question:
+
+- `langchain-pepwave/langchain_docs/` contains the LangChain documentation. Retrieve the files from this directory to get more context.
+- `langchain-pepwave/langchain_docs/cookbook/` contains the LangChain "cookbook". This is a library of demo code that is helpful for learning how to use LangChain and best practices. Search for examples that may be related to the user question in this directory.

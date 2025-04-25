@@ -1,0 +1,26 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Pepwave RAG Application
+
+## Context
+
+This repository contains two completely separate python repos. Here are their directories and descriptions:
+1. `langchain-pepwave`: A LangChain RAG application. The main project.
+2. `ragas`: Github fork of the RAGAS (i.e. "RAG Assessment") application for evaluating RAG applications. This is used as a dependency of `lanchain-pepwave` via pip install -e mode.
+
+## Further details on the langchain-pepwave repo:
+
+This application is designed to answer questions about Peplink's Pepwave line of products.
+It uses Pinecone as its vector store and LangChain as its framework.
+
+#### Directories
+- `langchain-pepwave/data/` contains the raw and processed data used for the application. You don't need to be concerned with this folder except to know that its contents are structured such that `[DATASOURCE_NAME]/raw` contains the raw data and `[DATASOURCE_NAME]/documents` contains the prepared data.
+- `langchain-pepwave/extract/`,`langchain-pepwave/transform/` and `langchain-pepwave/load/` contain the code for the ETL pipeline that scrapes the data, processes it, and finally loads it into the vector store.
+- `langchain-pepwave/utils/` contains utility code.
+- `langchain-pepwave/evals/` contains the evaluation code.
+- `langchain-pepwave/inference/` contains the code for actually running the application.
+
+
